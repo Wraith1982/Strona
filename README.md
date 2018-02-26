@@ -1,0 +1,2 @@
+# Strona
+Website with galeries
