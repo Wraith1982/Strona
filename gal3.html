@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<META CHARSET=UTF-8>
+<META name="description" content="Strona pokazowa z wykorzystaniem HTML, CSS z elementami CSS3 i JavaSript">
+<META name="Keywords" content="strony www, internetowe, html, css, css3, javascript">
+<META name="robots" content="index,follow,all">
+<META name="GOOGLEBOT" content="index,follow,all">
+<META name='revisit-after' content="14 days">
+<META name="language" content="pl">
+<TITLE>Prezentacja www</TITLE>
+<LINK href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<LINK href="style.css" REL="StyleSheet" TYPE="text/css">
+<!-- zewnętrzny css dla galeri lightbox w jQuery skrypt .js podpięty w ostatniej linii kodu strony -->
+<LINK href="css/lightbox.min.css" rel="stylesheet" type="text/css"> 
+</HEAD>
+<BODY>
+<DIV ID=strona>
+	<DIV ID=naglowek class=tlo>
+	<br>
+		<div align=center>
+			<h1>Dream Websites</h1>
+			<h2 style="color:#991B1B;">Prezentacja strony www</h2>
+		</div>
+		<img src="images/logo.png" style="position:absolute; right:10px; top:20px; width:120px; height:120px;">
+		
+		<div class=ikony>
+			<img src="images/twitter2.png" style="height:35px;" onMouseOver=this.src='images/twitter.png' onMouseOut=this.src='images/twitter2.png' onClick=document.location.href="http://www.twitter.com">
+			<img src="images/fb2.png" style="height:35px;" onMouseOver=this.src='images/fb.png' onMouseOut=this.src='images/fb2.png' onClick=document.location.href="http://www.facebook.com">
+			<img src="images/ig2.png" style="height:35px;" onMouseOver=this.src='images/ig.png' onMouseOut=this.src='images/ig2.png' onClick=document.location.href="http://www.instagram.com">
+			<img src="images/google2.png" style="height:35px;" onMouseOver=this.src='images/google.png' onMouseOut=this.src='images/google2.png' onClick=document.location.href="https://plus.google.com/">
+		</div>
+	</DIV>
+	<DIV ID=menu>
+		<nav>
+			<h3>Menu</h3>
+			<br>
+			<img src="images/start.png" onclick=document.location.href='index.html' onMouseOver=this.src='images/start2.png' onMouseOut=this.src='images/start.png'><br>
+			<img src="images/oferta.png" onclick=document.location.href='oferta.html' onMouseOver=this.src='images/oferta2.png' onMouseOut=this.src='images/oferta.png'><br>
+			<img src="images/galeria.png" onclick=podmenu.style.display='block'  onMouseOver=this.src='images/galeria2.png' onMouseOut=this.src='images/galeria.png'>
+			<div id=podmenu name=podmenu class=podmenu onMouseOver=podmenu.style.display='block' 
+			onMouseOut=podmenu.style.display='none'>
+				
+				&#187; <a href="galeria.html"><b>Galeria 1</b> (Classic)</a><br>
+				&#187; <a href="gal2.html"><b>Galeria 2</b> (Zoom)</a><br>
+				&#187; <a href="gal3.html"><b>Galeria 3</b> (Full scr.)</a><br>
+				&#187; <a href="gal4.html"><b>Galeria 4</b> (jQuery)</a>
+			
+			</div>
+			
+			<img src="images/kontakt.png" onclick=document.location.href='kontakt.html' onMouseOver=this.src='images/kontakt2.png' onMouseOut=this.src='images/kontakt.png'><br>
+		</nav>
+		<a href="mailto:michal.stadnicki@wp.pl"><img src="images/email.png" style="height:25px; margin:0px 4px 0px 15px;" onMouseOver=this.src='images/email2.png' onMouseOut=this.src='images/email.png' align=center>michal.stadnicki@wp.pl</a>
+		<br clear=all>
+	</DIV>
+	<DIV ID=sekcja1 align=center>
+		<H1>Galeria 3</H1>
+		<H3>Full Screen - wykorzystanie skryptu JavaScript</H3>
+		<br>
+		<div class=galeria4>
+			<img src="galeria/1m.jpg" onClick=pokaz('1') onMouseOver=this.src='galeria/1mc.jpg' onMouseOut=this.src='galeria/1m.jpg'>
+			<img src="galeria/2m.jpg" onClick=pokaz('2') onMouseOver=this.src='galeria/2mc.jpg' onMouseOut=this.src='galeria/2m.jpg'>
+			<img src="galeria/3m.jpg" onClick=pokaz('3') onMouseOver=this.src='galeria/3mc.jpg' onMouseOut=this.src='galeria/3m.jpg'>
+			<img src="galeria/4m.jpg" onClick=pokaz('4') onMouseOver=this.src='galeria/4mc.jpg' onMouseOut=this.src='galeria/4m.jpg'>
+			<img src="galeria/5m.jpg" onClick=pokaz('5') onMouseOver=this.src='galeria/5mc.jpg' onMouseOut=this.src='galeria/5m.jpg'>
+			<img src="galeria/6m.jpg" onClick=pokaz('6') onMouseOver=this.src='galeria/6mc.jpg' onMouseOut=this.src='galeria/6m.jpg'>
+			<img src="galeria/7m.jpg" onClick=pokaz('7') onMouseOver=this.src='galeria/7mc.jpg' onMouseOut=this.src='galeria/7m.jpg'>
+			<img src="galeria/8m.jpg" onClick=pokaz('8') onMouseOver=this.src='galeria/8mc.jpg' onMouseOut=this.src='galeria/8m.jpg'>
+			<img src="galeria/9m.jpg" onClick=pokaz('9') onMouseOver=this.src='galeria/9mc.jpg' onMouseOut=this.src='galeria/9m.jpg'>
+		</div>
+	
+	</DIV>
+	<DIV ID=sekcja2>
+		<p class=box1 xalign=justify>
+			<b>Aktualności 2017</b>
+			<br><br>
+			Blok informacyjny 
+			<br><br>
+			Projekt
+			<br> 
+			Michał Stadnicki	
+			<br>
+			&#187; <a href="http://www.kurshtml.edu.pl/" target=_blank>www.kurshtml.edu.pl</a> <!-- strzałki w kodzie ASCI -->
+			
+		</p>
+		<div class=box1>
+		<b>Web-developing</b>
+		<br>
+		<ul>
+			<li> HTML, HTML5
+			<li> CSS, CSS3
+			<li> JavaScript
+			<li> jQuery
+			
+		</ul>
+		</div>
+		<center>
+		kurs HTML:<br>
+		<a href="http://www.kurshtml.edu.pl/" target=_blank>kurshtml.edu.pl</a>
+		</center>
+		
+		
+	</DIV>
+	<DIV ID=stopka>
+	&copy; Michał Stadnicki - michal.stadnicki@wp.pl
+	</DIV>
+</DIV>
+<!-- obiekt do wyświetlania obrazów na pełnym ekranie powyżej strony tzn. na wyższej warstwie. między rgba, a nawiasem nie może być spacji -->
+<div id=wyswietl style="width:100%; height:100%; position:absolute; left:0px; top:0px; display:none; background-color:rgba(0, 0, 0, 0.9); color:#fff;" align=center onClick=wyswietl.style.display='none'>
+		
+</div>
+<!-- sktypt do obsługi galerii, funkcja pokaz -->
+<script>
+		var foto="";
+		function pokaz(foto){
+		var podglad=document.getElementById('wyswietl');
+		podglad.style.display='block';
+		
+		
+		var tresc=podglad.innerHTML="<div style='position:relative; top:50%; transform:translateY(-50%); cursor:pointer; width:700px;'><img src=galeria/"+foto+".jpg style='border:solid 5px #fff;'></div>";
+		}
+
+		</script>
+</BODY>
+</HTML>

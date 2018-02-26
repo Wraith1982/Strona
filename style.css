@@ -1,0 +1,182 @@
+BODY {background:#ddd;
+	margin:0px;
+}
+
+A {
+	color:#d00;
+	text-decoration:none;
+}
+A:hover{ color:#333; }
+
+H1 { text-shadow:3px 2px 2px #eee; }
+H3 { color:#333; }
+
+NAV { padding:15px;
+}
+ 
+NAV  IMG { 
+width:170px; 
+cursor:pointer;
+}
+ 
+#strona {
+	position:relative; 
+	width:1000px; 
+	min-height:700px; 
+	padding:0px;
+	margin:0px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#naglowek {
+	position:relative; 
+	width:1000px; 
+	height:150px; 
+	display:block;
+	padding:0px;
+	margin:0px;
+	background-image:url('images/tlo1.jpg');
+	background-size: 100% 100%;
+	-moz-background-size: 100% 100%; /* starsze wersje Firefoksa */
+	-webkit-background-size: 100% 100%; /*Safari i Chrome */
+	-o-background-size: 100% 100%; /* Opera */
+	
+	border-radius: 20px 20px 0px 0px;
+	-webkit-border-radius: 20px 20px 0px 0px;
+	-moz-border-radius: 20px 20px 0px 0px;
+
+}
+#naglowek2 {
+	position:relative; 
+	width:1000px; 
+	height:50px; 
+	display:none;
+	padding:0px;
+	margin:0px;
+	background:#888;
+}
+
+#menu {
+	position:relative; 
+	width:210px; 
+	min-height:650px; 
+	display:block;
+	padding:0px;
+	margin:0px;
+	float:left;
+	background-color:#EBEB99;
+}
+#sekcja1 {
+	position:relative;
+	width:580px; 
+	min-height:650px; 
+	display:block;
+	padding:0px;
+	margin:0px;
+	float:left;
+	background:#fff;
+}
+#sekcja2 {
+	position:relative; 
+	width:210px; 
+	min-height:650px; 
+	display:block;
+	padding:0px;
+	margin:0px;
+	float:right;
+	background-color:#fff;
+}
+#stopka { 
+	text-align:center;
+	color:#333;
+	width:1000px; 
+	height:20px; 
+	display:block;
+	padding:0px;
+	margin:0px;
+	clear:both;
+	position:fixed;
+	bottom:0px;
+	background-color:rgba(255, 255, 50, 0.4);
+}
+/* galeria www */
+#galeriaZoom {
+	position:relative;
+	z-index:99; 			/* musi być position aby uruchomić z-index, z-index pozycjonowanie po osi z, parametr 99, aby był na górze */
+    padding: 0px;	
+}
+
+#galeriaZoom  IMG{
+    height:100px;
+	width:160px;
+}
+
+#galeriaZoom IMG:hover{
+	transform: scale(3, 3);
+    -webkit-transform: scale(3, 3);
+    -ms-transform: scale(3, 3);
+    
+    transition-duration: 1.2s;
+    -webkit-transition-duration: 1.2s; /* Safari */
+	
+    box-shadow: 10px 5px 15px #888;  /* cień dla "wyskakujących" zdjęć, szerokość wysokość rozmycie kolor */
+}
+
+.ikony {
+	position:absolute; 
+	left:10px; 
+	bottom:5px;
+	cursor:pointer;
+}
+
+.podmenu{
+	display:none;
+	width:140px;
+	padding:20px 6px;
+	margin-left:10px;
+	
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color:#CFCF46;
+}
+
+.podmenu A:hover {
+	padding-left:10px; /* przesuwa się o 10px gdy najedzie się na kategorię z podmenu */
+}
+
+.galeria IMG {
+    height:40px;
+	xwidth:160px;
+	border:solid 2px #333;
+}
+.galeria IMG:hover { border-color:#ccc; }
+
+.galeria4 IMG {
+    height:100px;
+	width:160px;
+	border:solid 2px #ccc;
+}
+.galeria4 IMG:hover { border-color:#333; }
+
+.box1 {
+	width:160px;
+	margin: 20px auto;
+	min-height:100px;
+	padding: 10px;
+	
+	background-color:#EBEB99;
+	border:solid 2px #333;
+	
+	border-radius: 10px; 				/*	border-radius zokrąglenie rogów, webkit + moz - dla innych przeglądarek */
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	
+/*	border-top-right-radius: 40px; 						
+	-webkit-border-top-right-radius: 40px;
+	-moz-border-radius-topright: 40px;
+	*/
+	
+	/* narożnik górny prawy, dół to bottom */
+}
+
